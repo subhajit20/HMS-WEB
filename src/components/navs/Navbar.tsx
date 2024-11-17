@@ -1,5 +1,5 @@
 import Logo from '../../assets/logo.png'
-import { CiMenuBurger } from "react-icons/ci";
+// import { CiMenuBurger } from "react-icons/ci";
 import { Outlet } from 'react-router-dom';
 
 type Props = {}
