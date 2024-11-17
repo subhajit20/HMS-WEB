@@ -7,7 +7,7 @@ type Props = {}
 function DashboardNav({}: Props) {
   return (
    <>
-    <div className="navbar bg-slate-950 m-0 rounded-none">
+    <div className="navbar bg-amber-950 m-0 rounded-none">
             <div className="navbar-start">
                 <a className="navbar-item text-white text-xl">
                 National Institute For Locomotor Disabilities

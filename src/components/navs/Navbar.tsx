@@ -8,17 +8,17 @@ type Props = {}
 function Navbar({}: Props) {
   return (
     <>
-        <div className="navbar navbar-floating bg-lime-200 m-0 rounded-none">
+        <div className="navbar navbar-floating bg-amber-950 m-0 rounded-none">
             <div className="navbar-start">
-                <a className="navbar-item text-2xl">
+                <a className="navbar-item text-2xl text-white">
                      National Institute For Locomotor Disabilities
                     {/* <img src={NILDLOGO} width={60} height={60} alt="" /> */}
                 </a>
             </div>
             <div className="navbar-end">
-                <a className="navbar-item bg-slate-600 text-white rounded-sm menu-item">Doctor Login</a>
-                <a className="navbar-item bg-slate-600 text-white rounded-sm menu-item">Admin Login</a>
-                <a className="navbar-item bg-slate-600 text-white rounded-sm menu-item">Patient Registration</a>
+                <a className="navbar-item bg-slate-500 text-white rounded-sm menu-item">Doctor Login</a>
+                <a className="navbar-item bg-slate-500 text-white rounded-sm menu-item">Admin Login</a>
+                <a className="navbar-item bg-slate-500 text-white rounded-sm menu-item">Patient Registration</a>
             </div>
         </div>
         <Outlet />

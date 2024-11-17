@@ -13,7 +13,7 @@ type Props = {}
 function AdminSidebar({}: Props) {
   return (
     <div className="sticky flex h-screen flex-row gap-4 overflow-y-auto rounded-none sm:overflow-x-hidden ">
-	<aside className="sidebar-sticky sidebar justify-start bg-green-800">
+	<aside className="sidebar-sticky sidebar justify-start bg-yellow-700">
 		<section className="sidebar-title items-center p-4 flex justify-center">
 			<img src={NILDLOGO} width={120} height={120} alt="" />
 		</section>
