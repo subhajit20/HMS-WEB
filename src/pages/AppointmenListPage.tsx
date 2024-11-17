@@ -18,8 +18,9 @@ function AppointmenListPage({}: Props) {
         getAppoints()
     },[])
   return (
-    <div>
-        <div className="flex w-full overflow-x-auto">
+    <div className="p-10 min-h-screen bg-green" id="appointmentList_page ">
+        <h1 className="underline text-3xl text-center">Appointment List Page</h1>
+        <div className="flex w-full overflow-x-auto py-5">
             <table className="table">
                 <thead>
                     <tr>
@@ -27,6 +28,7 @@ function AppointmenListPage({}: Props) {
                         <th>Appointment ID</th>
                         <th>Patient Id</th>
                         <th>Name</th>
+                        <th>Consultant Fee</th>
                         <th>Paymet Status</th>
                     </tr>
                 </thead>
@@ -38,6 +40,7 @@ function AppointmenListPage({}: Props) {
                             <th>Appointment Id</th>
                             <td>{app.pId}</td>
                             <td>{app.name}</td>
+                            <td className="font-sans">₹{app.fee}</td>
                             <td>
                                 <div className={`${app.paid === true ? "text-green-600": "text-red-600"}`}>{app.paid === true ? "Done" : "Not Done"}</div></td>
                         </tr>

@@ -18,7 +18,8 @@ function PatientList({}: Props) {
     },[])
   return (
     <div className="p-10 min-h-screen bg-green" id="getAllPatient_page">
-        <table className="w-[50rem] overflow-x-auto">
+        <h1 className="underline text-3xl text-center">Patient List</h1>
+        <table className="w-[50rem] overflow-x-auto mt-5">
             <thead>
                 <tr>
                     <th>Patient Id</th>
