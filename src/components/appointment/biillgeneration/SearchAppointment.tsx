@@ -9,7 +9,7 @@ type SearchPatientType={
 const SearchAppointment = (props: SearchPatientType) => {
     const { searchAppointment, onChangeAppointmentId, appointmentInformation } = props;
   return (
-    <div>
+    <div id="bill">
         <div className="flex justify-center items-center gap-x-2">
             <input type="text" name="pid" onChange={(e)=> onChangeAppointmentId(e.target.value)} className="outline-none border-[1.2px] border-black px-2 py-1" placeholder="Enter Patient ID" /> <button onClick={searchAppointment} className="bg-gray-500 w-[10rem] px-2 py-1 text-white">Search Patient</button>
         </div>
