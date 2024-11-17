@@ -34,6 +34,11 @@ function BillGenerationPage({}: Props) {
         <h1 className="underline text-3xl text-center">Generate Bill</h1>
 
         <SearchAppointment appointmentInformation={appointmentDetails} searchAppointment={searchAppointment} onChangeAppointmentId={setAppointmentID} />
+
+        <div id="signature" className="flex justify-end items-end h-28">
+            {/* <div className="h-2 w-7 bg-black"></div> */}
+            <p className="text-base font-bold">signature </p>
+        </div>
     </div>
   )
 }
