@@ -6,6 +6,7 @@ import { ImTree } from "react-icons/im";
 import { FaUserDoctor } from "react-icons/fa6";
 import { CiBoxList } from "react-icons/ci";
 import { LuClipboardList } from "react-icons/lu";
+import { RiBillLine } from "react-icons/ri";
 
 
 type Props = {}
@@ -25,7 +26,7 @@ function AdminSidebar({}: Props) {
 					<a href="#appointment/booking" className='py-3 w-full hover:bg-black hover:text-white pl-2 text-white menu-item rounded-none text-xl font-normal'><FaUserDoctor /> Appointment Booking</a>
 					<a href="#patient/list" className='py-3 w-full hover:bg-black hover:text-white pl-2 text-white menu-item rounded-none text-xl font-normal'><CiBoxList /> Patients List</a>
 					<a href="#appointment/list" className='py-3 w-full hover:bg-black hover:text-white pl-2 text-white menu-item rounded-none text-xl font-normal'><LuClipboardList /> Appointment List</a>
-					<a href="#appointment/bill" className='py-3 w-full hover:bg-black hover:text-white pl-2 text-white menu-item rounded-none text-xl font-normal'><LuClipboardList /> Generate Bill</a>
+					<a href="#appointment/bill" className='py-3 w-full hover:bg-black hover:text-white pl-2 text-white menu-item rounded-none text-xl font-normal'><RiBillLine /> Generate Bill</a>
 				</div>
 				{/* <div className="hospital_menu w-full">
 					<span className="menu-title text-2xl text-white bg-blue-950 w-full border-r-4 py-3 border-r-gray-400 flex justify-center items-center rounded-none"><CiHospital1 />Monitor Hospital</span>
