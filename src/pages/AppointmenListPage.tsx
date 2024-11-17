@@ -37,7 +37,7 @@ function AppointmenListPage({}: Props) {
                         allAppointments.length > 0 && allAppointments.map((app,i)=>{
                             return  <tr>
                             <th>{i+1}</th>
-                            <th>Appointment Id</th>
+                            <th>{app.appointmentID}</th>
                             <td>{app.pId}</td>
                             <td>{app.name}</td>
                             <td className="font-sans">₹{app.fee}</td>

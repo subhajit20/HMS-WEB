@@ -34,11 +34,36 @@ function CreateBooking(props: Props) {
     }
   },[])
 
+  const existingIds = ["abc123", "def456", "ghi789"]; // Example existing IDs
+
+  const generateRandomId = (length = 6) => {
+    return Math.random().toString(36).substring(2, length + 2);
+};
+
+const checkUniqueId = (id: string, existing: string[]) => {
+    return !existing.includes(id);
+};
+
+const generateUniqueId = (length = 6, existing: any[]) => {
+    let id;
+    const limit = 100; // Max attempts to find a unique ID
+    let attempts = 0;
+
+    do {
+        id = generateRandomId(length);
+        attempts++;
+    } while (!checkUniqueId(id, existing) && attempts < limit);
+    console.log(`NILD${id}`)
+    return attempts < limit ? `NILD${id}` : null; // Return null if unique ID not found
+};
+
   const bookAppointment = () =>{
+      const ID = generateUniqueId(8, existingIds);
       console.log(patientInformation)
       console.log(appointMentDetails)
 
       let appointInformation = {
+        appointmentID:`APPOINT-${ID}`,
         ...patientInformation,
         ...appointMentDetails,
         paid: false
