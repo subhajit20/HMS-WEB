@@ -1,5 +1,6 @@
 import { Outlet } from 'react-router-dom';
-import Logo from '../../assets/logo.png'
+// import Logo from '../../assets/logo.png'
+import NILDLOGO from '../../assets/NILD-logo.png'
 // import { MdOutlineComputer } from "react-icons/md";
 import { ImTree } from "react-icons/im";
 import { FaUserDoctor } from "react-icons/fa6";
@@ -14,7 +15,7 @@ function AdminSidebar({}: Props) {
     <div className="sticky flex h-screen flex-row gap-4 overflow-y-auto rounded-none sm:overflow-x-hidden ">
 	<aside className="sidebar-sticky sidebar justify-start bg-green-800">
 		<section className="sidebar-title items-center p-4 flex justify-center">
-			<img src={Logo} width={100} height={100} alt="" />
+			<img src={NILDLOGO} width={120} height={120} alt="" />
 		</section>
 		<section className="sidebar-content min-h-[20rem] ">
 			<div className="menus flex flex-col justify-center items-center">

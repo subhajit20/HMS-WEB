@@ -1,4 +1,5 @@
-import Logo from '../../assets/logo.png'
+// import Logo from '../../assets/logo.png'
+// import NILDLOGO from '../../assets/NILD-logo.png'
 // import { CiMenuBurger } from "react-icons/ci";
 import { Outlet } from 'react-router-dom';
 
@@ -9,8 +10,9 @@ function Navbar({}: Props) {
     <>
         <div className="navbar navbar-floating bg-lime-200 m-0 rounded-none">
             <div className="navbar-start">
-                <a className="navbar-item">
-                    <img src={Logo} width={40} height={40} alt="" />
+                <a className="navbar-item text-2xl">
+                     National Institute For Locomotor Disabilities
+                    {/* <img src={NILDLOGO} width={60} height={60} alt="" /> */}
                 </a>
             </div>
             <div className="navbar-end">
