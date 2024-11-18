@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import DoctorLogin from '../assets/doctor-login.avif'
 // import Logo from '../assets/logo.png';
 import { useNavigate } from 'react-router-dom';
@@ -22,12 +22,22 @@ function LoginPage({}: Props) {
     for(let i in patient_login){
       console.log(patient_login[i])
       if(patient_login[i].pID === pid && patient_login[i].password === password){
-        console.log("Okkk")
+        console.log("Okkk");
+        localStorage.setItem("login","1");
         return navigate('/patient/reg');
       }
     }
 
   }
+
+  useEffect(()=>{
+    const login:string | null = localStorage.getItem("login");
+    console.log(login)
+    if(login && login === "1"){
+      console.log("Going")
+        return navigate("/patient/reg")
+    }
+},[]);
   return (
     <div id="login_page" className='min-h-screen'>
         <div className='flex justify-around items-center h-[40rem] '>

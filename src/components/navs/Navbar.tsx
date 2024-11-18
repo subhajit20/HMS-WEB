@@ -1,7 +1,9 @@
 // import Logo from '../../assets/logo.png'
 // import NILDLOGO from '../../assets/NILD-logo.png'
 // import { CiMenuBurger } from "react-icons/ci";
+// import { useEffect } from 'react';
 import { Outlet } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 
 type Props = {}
 
