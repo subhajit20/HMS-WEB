@@ -41,8 +41,14 @@ function AdminSidebar({}: Props) {
 	</aside>
 	<div className="flex w-full flex-row flex-wrap gap-4">
 		<div className="my-2 grid w-full grid-cols-1">
-			<div className="flex min-h-screen w-full items-center justify-center border-2 border-dashed border-border bg-gray-1">
+			<div className="relative flex min-h-screen w-full items-center justify-center border-2 border-dashed border-border bg-gray-1">
 				<Outlet />
+				<div className='fixed bottom-[20px] right-[20px] text-center opacity-40'>
+					{/* <h1 className='uppercase'>Designed by</h1> */}
+					<h1 className='uppercase text-[0.8rem]'>Mevrick Solution Pvt Ltd</h1>
+					<h1 className='uppercase text-[0.9rem]'>Hospital Management System</h1>
+					<h1 className='uppercase text-[0.6rem]'>Confidential - For Internal Use Only</h1>
+				</div>
 			</div>
 		</div>
 	</div>
