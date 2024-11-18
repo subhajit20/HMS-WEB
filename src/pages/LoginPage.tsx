@@ -3,6 +3,7 @@ import DoctorLogin from '../assets/doctor-login.avif'
 // import Logo from '../assets/logo.png';
 import { useNavigate } from 'react-router-dom';
 import NILDLOGO from '../assets/NILD-logo.png'
+import { toast, ToastContainer } from 'react-toastify';
 type Props = {}
 
 function LoginPage({}: Props) {
@@ -24,10 +25,15 @@ function LoginPage({}: Props) {
       if(patient_login[i].pID === pid && patient_login[i].password === password){
         console.log("Okkk");
         localStorage.setItem("login","1");
-        return navigate('/patient/reg');
+        toast.success("Login successful! Please wait...")
+        setTimeout(()=>{
+          navigate('/patient/reg');
+        },1000);
+        return;
       }
     }
 
+    toast.error("Login failed!")
   }
 
   useEffect(()=>{
@@ -56,6 +62,7 @@ function LoginPage({}: Props) {
                 <img src={DoctorLogin} width={500} height={500} alt="" />
             </div>
         </div>
+        <ToastContainer />
     </div>
   )
 }
