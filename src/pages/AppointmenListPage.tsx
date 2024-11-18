@@ -21,9 +21,9 @@ function AppointmenListPage({}: Props) {
     <div className="p-10 min-h-screen bg-green" id="appointmentList_page ">
         <h1 className="underline text-3xl text-center">Appointment List Page</h1>
         <div className="flex w-full overflow-x-auto py-5">
-            <table className="table">
+            <table className="w-[57rem]">
                 <thead>
-                    <tr>
+                    <tr className="bg-yellow-600 text-white">
                         <th>SL. NO</th>
                         <th>Appointment ID</th>
                         <th>Patient Id</th>
@@ -38,7 +38,7 @@ function AppointmenListPage({}: Props) {
                         allAppointments.length > 0 && allAppointments.map((app,i)=>{
                             return  <tr>
                             <th>{i+1}</th>
-                            <th>{app.appointmentID}</th>
+                            <th className="text-[0.8rem]">{app.appointmentID}</th>
                             <td>{app.pId}</td>
                             <td>{app.name}</td>
                             <td>{new Date(app.appointmentDate).toLocaleDateString()}</td>

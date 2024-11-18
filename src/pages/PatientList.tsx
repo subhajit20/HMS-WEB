@@ -21,7 +21,8 @@ function PatientList({}: Props) {
         <h1 className="underline text-3xl text-center">Patient List</h1>
         <table className="w-[50rem] overflow-x-auto mt-5">
             <thead>
-                <tr>
+                <tr className="bg-yellow-600 text-white">
+                    <th>SL. NO</th>
                     <th>Patient Id</th>
                     <th>Patient Name</th>
                     <th>Patient DOB</th>
@@ -31,8 +32,9 @@ function PatientList({}: Props) {
             </thead>
             <tbody>
                 {
-                    patients && patients?.length > 0 && patients?.map((pd)=>{
+                    patients && patients?.length > 0 && patients?.map((pd, i)=>{
                         return <tr key={pd.pId}>
+                            <td>{i+1}</td>
                             <td>{pd.pId}</td>
                             <td>{pd.name}</td>
                             <td>{pd.dob}</td>
