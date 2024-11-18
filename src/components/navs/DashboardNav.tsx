@@ -54,7 +54,7 @@ function DashboardNav({}: Props) {
         </div>
         <AdminSidebar />
 
-        <label className="btn btn-primary" htmlFor="modal-1">Open Modal</label>
+        {/* <label className="btn btn-primary" htmlFor="modal-1">Open Modal</label> */}
         <input className="modal-state" id="modal-1" type="checkbox" />
         <div className="modal">
             <label className="modal-overlay" htmlFor="modal-1"></label>

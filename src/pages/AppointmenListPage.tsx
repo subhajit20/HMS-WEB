@@ -28,6 +28,7 @@ function AppointmenListPage({}: Props) {
                         <th>Appointment ID</th>
                         <th>Patient Id</th>
                         <th>Name</th>
+                        <th>Date of Appointment</th>
                         <th>Consultant Fee</th>
                         <th>Paymet Status</th>
                     </tr>
@@ -40,6 +41,7 @@ function AppointmenListPage({}: Props) {
                             <th>{app.appointmentID}</th>
                             <td>{app.pId}</td>
                             <td>{app.name}</td>
+                            <td>{new Date(app.appointmentDate).toLocaleDateString()}</td>
                             <td className="font-sans">₹{app.fee}</td>
                             <td>
                                 <div className={`${app.paid === true ? "text-green-600": "text-red-600"}`}>{app.paid === true ? "Done" : "Not Done"}</div></td>
