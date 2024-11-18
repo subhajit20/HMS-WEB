@@ -11,7 +11,7 @@ function Navbar({}: Props) {
         <div className="navbar navbar-floating bg-amber-950 m-0 rounded-none">
             <div className="navbar-start">
                 <a className="navbar-item text-2xl text-white">
-                     National Institute For Locomotor Disabilities
+                     National Institute for Locomotor Disabilities
                     {/* <img src={NILDLOGO} width={60} height={60} alt="" /> */}
                 </a>
             </div>

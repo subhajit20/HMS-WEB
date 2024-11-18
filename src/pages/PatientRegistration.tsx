@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { ToastContainer, toast } from "react-toastify";
 
 type Props = {}
 
@@ -76,6 +77,9 @@ const generateUniqueId = (length = 6, existing: any[]) => {
           pId:id
         }]
       }))
+      toast.success("Patient registered successfully");
+
+      return
     }else{
       let parsedPatient = JSON.parse(patient).patient;
       console.log(parsedPatient)
@@ -87,8 +91,12 @@ const generateUniqueId = (length = 6, existing: any[]) => {
       localStorage.setItem('patient',JSON.stringify({
         patient:[...parsedPatient]
       }))
+      toast.success("Patient registered successfully");
+      return
     }
   }
+
+
   return (
     <div className="p-10 min-h-screen bg-green" id="Receptionist_page ">
         <h1 className="underline text-3xl">Patient Registration Form</h1>
@@ -113,8 +121,9 @@ const generateUniqueId = (length = 6, existing: any[]) => {
           })
         }
 
-            <button className="bg-gray-700 text-white text-lg rounded-lg px-3 py-1 mt-2" onClick={addPatient}>SUBMIT</button>
+            <button className="bg-gray-700 text-white text-lg rounded-lg px-3 py-1 mt-2" onClick={addPatient}>REGISTER</button>
         </div>
+        <ToastContainer />
     </div>
   )
 }

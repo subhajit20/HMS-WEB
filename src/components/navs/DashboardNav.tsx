@@ -10,7 +10,7 @@ function DashboardNav({}: Props) {
     <div className="navbar bg-amber-950 m-0 rounded-none">
             <div className="navbar-start">
                 <a className="navbar-item text-white text-xl">
-                National Institute For Locomotor Disabilities
+                National Institute for Locomotor Disabilities
                 </a>
             </div>
             <div className="navbar-end">

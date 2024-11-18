@@ -37,7 +37,7 @@ function BillGenerationPage({}: Props) {
 
         <div id="signature" className="flex justify-end items-end h-28">
             {/* <div className="h-2 w-7 bg-black"></div> */}
-            <p className="text-base font-bold">signature </p>
+            <p className="text-base font-bold">Signature </p>
         </div>
     </div>
   )
