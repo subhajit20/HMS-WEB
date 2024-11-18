@@ -45,7 +45,7 @@ function LoginPage({}: Props) {
     }
 },[]);
   return (
-    <div id="login_page" className='min-h-screen'>
+    <div id="login_page" className='min-h-screen relative'>
         <div className='flex justify-around items-center h-[40rem] '>
             <div className='left flex flex-col justify-center items-center gap-y-3'>
                 <img src={NILDLOGO} width={150} height={150} alt="" />
@@ -63,6 +63,12 @@ function LoginPage({}: Props) {
             </div>
         </div>
         <ToastContainer />
+        <div className='fixed bottom-[10px] right-[20px] text-center opacity-40'>
+					{/* <h1 className='uppercase'>Designed by</h1> */}
+					<h1 className='uppercase text-[0.8rem]'>Mevrick Solution Pvt Ltd</h1>
+					<h1 className='uppercase text-[0.9rem]'>Hospital Management System</h1>
+					<h1 className='uppercase text-[0.6rem]'>Confidential - For Internal Use Only</h1>
+				</div>
     </div>
   )
 }
