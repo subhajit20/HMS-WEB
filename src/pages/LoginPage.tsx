@@ -40,7 +40,7 @@ function LoginPage({}: Props) {
     const login:string | null = localStorage.getItem("login");
     console.log(login)
     if(login && login === "1"){
-      console.log("Going")
+        console.log("Going")
         return navigate("/patient/reg")
     }
 },[]);
